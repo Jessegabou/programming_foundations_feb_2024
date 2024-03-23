@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michael's Profile</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  } 
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #f2f2f2;
+  }
+  nav a {
+    display: inline-block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  nav a:hover {
+    background-color: #ddd;
+  }
+  section {
+    padding: 20px;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+</head>
+<body style="background-color: lightblue;">
+
+<header>
+  <h1>Student Profile</h1>
+</header>
+
+<nav id="menu">
+  <a href="#about">About Me</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#vision">Vision</a>
+  <a href="#contact">Contact Details</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>My name is Michael Olawale Opeyemi and i love to play sports also i love to play games like call of duty.</p>
+</section>
+<img src="pic.jpg" style="width: 300px; height: 300px;">
+<section id="hobbies">
+  <h2>Hobbies</h2>
+  <p> soccer<p>
+  <P>football</P>
+  </p>cooking</p>
+  </p> coding</P>
+  </p> learning</p>
+</section>
+
+<section id="vision">
+  <h2>Vision</h2>
+  <p>My vision or what i want to be when i grow is an IT Manager because i love to code and make 
+ websites, also IT has a good paying job to if i go to that profession. </p>
+</section>
+
+<section id="contact">
+  <h2>Contact Details</h2>
+  <p> you can contact me by: Michaeldeerpark@gmail.com</p>
+</section>
+
+<footer>
+  <p>&copy; 2024 Student Profile</p>
+</footer>
+
+<script>
+  // Auto-scrolling functionality for the horizontal menu
+  document.addEventListener('DOMContentLoaded', function() {
+    const menu = document.getElementById('menu');
+    menu.addEventListener('click', function(event) {
+      const target = event.target;
+      if (target.tagName === 'A') {
+        const sectionId = target.getAttribute('href').substring(1);
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+        event.preventDefault();
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

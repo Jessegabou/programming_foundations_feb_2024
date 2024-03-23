@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>password</title>
+    <style>
+        body {
+            background-color: lightblue;
+            padding: 30px;
+        }
+    </style>
+<script>
+    function checkpassword() {
+        var password = document.getElementById("passwordbox");
+        var passwordtext = password.value;
+    }
+    if(passwordtext=="Ernest300"){
+        return ture 
+    }
+    alert("Access DENIED! incorrect password!");
+   return false;
+</script>
+</head>
+<body>
+<p style="font-size: 30px;"> THE MONK DIAMOND DISCOVERY </p>
+<p>Please enter the password to view this website</p>
+<p>password:<input id="passwordbox" type="password"/></p>
+<a href="file:///C:/Users/Opeyemi/OneDrive/Documents/coding/jhb-it-mike/programming_foundations_feb_2024/monkdiamonddiscovery.html" onclick="return checkpassword();">
+Click here to submit  password and view website
+</a>
+</body>
+</html>
