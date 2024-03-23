@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faith's Profile</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #F4C2C2;
+    color: #320d0d;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #0a0101;
+  }
+  nav a {
+    display: inline-block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #e975a7;
+  }
+  nav a:hover {
+    background-color: #7d5cec;
+  }
+  section {
+    padding: 20px;
+  }
+  footer {
+    background-color: #000000;
+    color: #f9a7a7;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  body {
+    background-image: url("https://i.pinimg.com/originals/29/bd/98/29bd983f575d58b9eb321d9353db334b.gif");
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Faith'S Profile</h1>
+</header>
+
+<nav id="menu">
+  <a href="#about">About Me</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#vision">Vision</a>
+  <a href="#contact">Contact Details</a>
+</nav>
+
+<section id="about">
+  <h2>About Me!</h2>
+  <h2><p>my name is faith i came to America when i was 6 years old now i am 13 years old I'm also from Nigeria .</p></h2>
+</section>
+
+<section id="hobbies">
+  <h2>Hobbies!</h2>
+  <h2>1. Basketball</h2>  
+   <h2> 2. Track</h2>
+  <h2> 3. Coding </h2> 
+   <h2>4.walking</h2> 
+   <h2>5. Reading</h2> 
+  </p>
+</section>
+
+<section id="vision">
+  <h2>Vision!</h2>
+  <h2> <p>my vision is to be a neurosurgeon, I envision myself providing patients with the best possible care and treatment, and using my expertise to advance the field of neurosurgeon's. I want to be known for my dedication to patient-centered care, and for my ability to help people and find new solutions to complex medical problems. At the same time, I also see myself as a lawyer who is committed to social justice and equality. </p> </h2>
+</section>
+
+<section id="contact">
+  <h2>Contact Details</h2>
+  <h2><p>here is my contact detail</h2> 
+    <h2>faithgeraldinedeerpark@gmail.com</h2>
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2024 Student Profile</p>
+</footer>
+
+<script>
+  // Auto-scrolling functionality for the horizontal menu
+  document.addEventListener('DOMContentLoaded', function() {
+    const menu = document.getElementById('menu');
+    menu.addEventListener('click', function(event) {
+      const target = event.target;
+      if (target.tagName === 'A') {
+        const sectionId = target.getAttribute('href').substring(1);
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+        event.preventDefault();
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
