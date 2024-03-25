@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pass</title>
+        <script>
+            Tries = 10000
+        </script>
+        <style>
+            body {
+                background-color: rgba(1, 94, 10, 0.384);
+                padding: 30px;
+            }
+
+        </style>
+        <script>
+            function checkPassword() {
+                var password = document.getElementById("passwordBox");
+                var passwordText = password.value;
+                if(passwordText == "DaveAkinyede") {
+                    return true;
+                }
+            Tries =(Tries - 1);
+                alert("Wrong! " + Tries + " Try remaining!");
+                return false;
+            }
+       
+        </script>
+    </head>
+    <body>
+        <center><p style="font-size: 60pt;">Dave's Website Password</p>
+      <p>Type the password</p>
+      <p>Password:<input id="passwordBox" type="password"/></p>
+      <a href="StudentProfile.html"  onClick="return checkPassword();">Enter</div></center>
+    </body>
+</html>

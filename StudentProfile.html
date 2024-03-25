@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Madimi One' rel='stylesheet'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: 'Madimi One';font-size: 22px;
+  }
+  header {
+    background-color: #00c407;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #0f811e;
+  }
+  nav a {
+    display: inline-block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+
+
+
+  
+  nav a:hover {
+    background-color: #dadbda;
+  }
+  section {
+    padding: 20px;
+  }
+  footer {
+    background-color: #244a2b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.5%;
+  }
+
+  a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+    }
+    
+    a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+    }
+    
+
+</style>
+</head>
+<body style="background-color: rgb(25, 185, 68);">
+    
+
+<header>
+  <h1>Dave Akinyede</h1>   <p>Learn and share about me!</p>
+
+  <img src="waving-gif-3.gif">
+</header>
+
+
+
+<nav id="menu">
+  <a href="#about">About Me</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#vision">Vision</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact Details</a>
+  <a href="#Gallery">Gallery</a>
+  
+</nav>
+
+<p>_____________________________________________________________________________________________________________________________________________________________________</p>
+
+
+
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>My name is Dave Akinyede and I am in the 6th grade. I am 11 turning 12 in may.</br> My Birthday is on May 22 2012.</br> I Live in Perry Hall, Maryland</p>
+</section>
+
+<img src="Maryland.jpg" alt="Perry Hall" width="350" height="250">
+
+<p>_____________________________________________________________________________________________________________________________________________________________________</p>
+
+<section id="hobbies">
+  <h2>Hobbies</h2>
+  <p>My hobbies are:</br>Going outside</br> Playing with my friends</br>Reading a tiny bit of my favorite books</br> and playing games (especially fortnite.)</p>
+</section>
+
+<p>_____________________________________________________________________________________________________________________________________________________________________</p>
+
+<section id="vision">
+  <h2>Vision</h2>
+  <p>When I see myself in the future, I want to be an IT (Information Technology)</br> I want to work for amazing companies and work for lots of money so that it will benefit my lifestyle. I also want to go to a good collage so that I can get a degree.</p>
+</section>
+
+<p>_____________________________________________________________________________________________________________________________________________________________________</p>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <li>I learned how to ride a bike at like 4</li>
+  <li>I can do backflips and frontflips.(just not on a solid floor)</li>
+  <li>I have been programing for about 6 years (started at 6) and I was using scratch, to vs code, to unity, to java and c# (for Unity) </li>
+</section>
+
+<p>_____________________________________________________________________________________________________________________________________________________________________</p>
+
+<section id="Gallery">
+  <h2>Gallery</h2>
+  <p>Here are some of my pirctures of me and my family:</p>
+</section>
+
+<img src="IMG-20240324-WA0002.jpg" width="200" height="270">
+
+<img src="IMG-20240324-WA0003.jpg" width="310" height="250">
+
+<img src="IMG-20240324-WA0004.jpg" width="310" height="250">
+
+<img src="IMG-20240324-WA0005.jpg" width="310" height="250">
+
+<img src="IMG-20240324-WA0006.jpg" width="320" height="250">
+<p>_____________________________________________________________________________________________________________________________________________________________________</p>
+<section id="contact">
+  <h2>Contact Me!</h2>
+  <p>Here is some of my contact info:</p>
+  <p>Email me! </p>
+  <u><a href="mailto:dvakinyede@gmail.com">dvakinyede@gmail.com</a></u>
+  <u><a href="tel:4439609600">443-960-9600</a></u>
+
+</section>
+
+
+
+<script>
+  // Auto-scrolling functionality for the horizontal menu
+  document.addEventListener('DOMContentLoaded', function() {
+    const menu = document.getElementById('menu');
+    menu.addEventListener('click', function(event) {
+      const target = event.target;
+      if (target.tagName === 'A') {
+        const sectionId = target.getAttribute('href').substring(1);
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+        event.preventDefault();
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>
+
+<html>
