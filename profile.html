@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link href='https://fonts.googleapis.com/css?family=Abyssinica SIL' rel='stylesheet'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile</title>
+<style>
+  body {
+    /* Abyssinica SIL; */
+    font-family: 'Abyssinica SIL';
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6ff;
+  }
+  header {
+    background-color: #008cff;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #ee82ee;
+  }
+  nav a {
+    display: inline-block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #000000;
+  }
+  nav a:hover {
+    background-color: #ee82ee(325 22% 1%);
+  }
+  section {
+    padding: 15px;
+  }
+  footer {
+    background-color: #ee82ee;
+    color: #000000;
+    text-align: center;
+    padding: 5px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Student Profile</h1>
+</header>
+
+<nav id="menu">
+  <a href="#about">About Me</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#vision">Vision</a>
+  <a href="#contact">Contact Details</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p> My name is Yosola Akinyemi.</p>
+    <p>I am 10 years old,in 4th grade. I go to Calvert School. My favorite color is Pink.
+  </p>
+  <img src="yosolapics.jpg" style="height: 500px; width:250px;">
+</section>
+
+<section id="hobbies">
+  <h2>Hobbies</h2>
+  <p>I like to play piano.
+     and I also do track and feild</p>
+</section>
+
+<section id="vision">
+  <h2>Vision</h2>
+  <p> I want to be a doctor when I grow up. 
+   That is because I want to help people.</p>
+</section>
+
+<section id="contact" style="padding-bottom: 100px;">
+  <h2>Contact Details</h2>
+  <p>My e-mail adress is yostope2013@gmail.com.</p>
+</section>
+
+<footer>
+  <p>&copy; 2024 Student Profile</p>
+</footer>
+
+<script>
+  // Auto-scrolling functionality for the horizontal menu
+  document.addEventListener('DOMContentLoaded', function() {
+    const menu = document.getElementById('menu');
+    menu.addEventListener('click', function(event) {
+      const target = event.target;
+      if (target.tagName === 'A') {
+        const sectionId = target.getAttribute('href').substring(1);
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+        event.preventDefault();
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
