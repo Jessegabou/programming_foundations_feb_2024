@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #FAE0D8;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav {
+      overflow-x: auto;
+      white-space: nowrap;
+      background-color: #F6C7B3
+    }
+
+    nav a {
+      display: inline-block;
+      padding: 14px 20px;
+      text-decoration: none;
+      color: lightyellow;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+    }
+
+    section {
+      padding: 20px;
+      background-color: lightyellow;
+    }
+
+    footer {
+      background-color: #FCD5CE;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    #collage {
+      width: 213px;
+      height: 268px;
+    }
+
+    #coder {
+      width: 213px;
+      height: 268px;
+    }
+    #M {
+width: 213px;
+height: 268px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Student Profile</h1>
+  </header>
+
+  <nav id="menu">
+    <a href="#about">About Me</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#vision">Vision</a>
+    <a href="#contact">Contact Details</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>My name is Molade Dada I am in fifth grade and im 10 years old!</p>
+    <img id="M" src="Mpurple.png" alt="M"/>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <ol>
+      <li>dance</li>
+      <li>swimming </li>
+      <li> coding</li>
+      <li> baking</li>
+      <li> drawing</li>
+    </ol>
+    <img id="collage" src="collage.png" alt="collage" />
+  </section>
+
+  <section id="vision">
+    <h2>Vision</h2>
+    <p> When I grow up, I want to be a medical coder because I love helping people feel better. Also, I love coding.</p>
+    <img src="coder.png" id="coder" alt="coder" />
+  </section>
+
+
+
+  <section id="contact">
+    <h2>Contact Details</h2>
+    <p>Contact me at molade0924@gmail.com
+    </p>
+  </section>
+
+  <footer>
+
+
+    <p>&copy; 2024 Student Profile</p>
+  </footer>
+
+  <script>
+    // Auto-scrolling functionality for the horizontal menu
+    document.addEventListener('DOMContentLoaded', function () {
+      const menu = document.getElementById('menu');
+      menu.addEventListener('click', function (event) {
+        const target = event.target;
+        if (target.tagName === 'A') {
+          const sectionId = target.getAttribute('href').substring(1);
+          const section = document.getElementById(sectionId);
+          section.scrollIntoView({ behavior: 'smooth' });
+          event.preventDefault();
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
