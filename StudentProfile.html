@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's Profile</title>
+<style>
+  body {
+    font-family: cursive, sans-serif;
+    margin: 0;
+    padding: 0
+  }
+  header {
+    background-color: #fc0909;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #000000;
+  }
+  nav a {
+    display: inline-block;
+    padding: 14px 20px;
+    text-decoration: red;
+    color: #f5eded;
+  }
+  nav a:hover {
+    background-color: #ddd;
+  }
+  section {
+    padding: 20px;
+  }
+  footer {
+    background-color: #030303;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Jesse's Profile</h1>
+</header>
+
+<nav id="menu">
+  <a href="#about">About Me</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#vision">Vision</a>
+  <a href="#contact">Contact Details</a>
+</nav>
+<p>______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________g__________________________________________________________________________________________________________________________________________________</p>
+<section id="about">
+  <h2>About Me</h2>
+  <p>My name is Jesse Egabou. I am 11 right now but in July I will turn 12 years old.
+  </p> 
+  <p> My Birthday is on July 7th 2012.</p> 
+  <p> And I live in Owings Mills.</p>
+</section>
+
+<img src="pic.jpg">
+
+<section id="hobbies">
+  <h2>Hobbies</h2>
+  <p>My Hobbies are:</p>
+  <p>Are to Play Video Games (My Favorite Video Game is 2k24)</p>
+  <p>I also like to Play sports like Basketball, Football, And Soccer. </p> 
+  <p>I also like to go outside and play these Sports.</p>
+</section>
+<p>_____________________________________________________________________________________________________________________________________________________________________________________________</p>
+<section id="vision">
+  <h2>Vision</h2>
+  <p>My Visions are that I want to Be a Engineer when I am Older</p>
+  <p>The reason is that I like Building different things and Being able to Invent my own type of Resources</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Details</h2>
+  <p>You can Contact here</p>
+  <p>Jessegabou@gmail.com</p>
+</section>
+
+<footer>
+  <p>&copy; 2024 Jesse's Profile</p>
+</footer>
+
+<script>
+  // Auto-scrolling functionality for the horizontal menu
+  document.addEventListener('DOMContentLoaded', function() {
+    const menu = document.getElementById('menu');
+    menu.addEventListener('click', function(event) {
+      const target = event.target;
+      if (target.tagName === 'A') {
+        const sectionId = target.getAttribute('href').substring(1);
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+        event.preventDefault();
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
